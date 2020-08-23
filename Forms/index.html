@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header id="reserva">
+    <h1>Agendamento</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with HTML API</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,200&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+     <nav id="menu">
+        <ul>
+            <li> <a href="     " target="blanck">     Home        </a> </li>    <!--Menu Principal-->
+            <li> <a href="      " target="blanck"> Agendamento </a> </li> 
+            <li> <a href="      " target="blanck">    Informações </a> </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+   
+    <form action="">
+        <h2>
+            Cadastro de Reserva
+        </h2>
+
+        <div class="input">
+            <input required type="text" />
+            <label>Nome</label>
+            <span class="error"></span>
+        </div>
+        
+        <div class="input">
+            <input required type="number" />
+            <label>Matricula</label>
+            <span class="error"></span>
+        </div>
+        
+      
+                <label>Curso</label>
+                <select name="select">
+                    
+                    <option value="none"selected>Selecione</option>
+                    <option value="engenharia de computação">Engenharia de Computação</option> 
+                    <option value="engenharia elétrica" >Engenharia Elétrica</option>
+                    <option value="Música">Música</option>
+                </select>
+
+                <div class="input">
+                    <input type="datetime-local" />
+                    <label>Horário</label>
+                    <span class="error"></span>
+                </div>
+            
+                    
+
+        <button id="botao"  onclick="respostadobotao()" type="submit">Enviar</button>
+        
+        
+        <p id="confirmação"></p>
+        <script>
+        function respostadobotao() {
+        //   document.getElementById("confirmação").innerHTML = "Reserva Feita !";
+            window.alert('Reserva Feita!')
+        }
+        </script>
+
+           
+
+    </form>
+    
+    <footer id="footer_info">
+        <h2>Contato</h2>
+        <p>
+            <b>Telefone</b>: 3614-1247 <br>
+                      3602-1530
+        </p>
+        <p>
+        <address>
+            <b>Endereço</b>: Bloco I – Campus Sobral – Mucambinho <br>
+                    Rua Coronel Estanislau Frota, 563 <br>
+                    CEP 62.010-560 – Centro <br>
+                    Sobral, Ceará <br> <br>  
+        </address>
+        </p>
+</body>
+
+</html>
