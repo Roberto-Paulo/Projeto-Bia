@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Laboratórios Universitários
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.all.min.css">
+
+    <link rel='stylesheet' href='css/owl.carousel.min.css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo_agendamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <!--Início do menu-->
+		<nav>
+			<div class="logo">
+				<img class="calendar" src="imagens/calendar.svg">
+				<h4>Agendamentos</h4>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="agendamentos.html">Agendamentos</a></li>
+				<li><a href="info.html">Informações</a></li>
+			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+    <!--Fim do menu-->
+    
+    <form action="">
+        <h2>
+            Cadastro de Reserva
+        </h2>
+
+        <div class="input">
+            <input required type="text" />
+            <label>Nome</label>
+            <span class="error"></span>
+        </div>
+        
+        <div class="input">
+            <input required type="number" />
+            <label>Matrícula</label>
+            <span class="error"></span>
+        </div>
+        
+      
+                <label>Curso</label>
+                <select name="select">
+                    
+                    <option value="none"selected>Selecione</option>
+                    <option value="engenharia de computação">Engenharia de Computação</option> 
+                    <option value="engenharia elétrica" >Engenharia Elétrica</option>
+                    <option value="Música">Música</option>
+                </select>
+
+                <div class="input">
+                    <input type="datetime-local" />
+                    <label>Horário</label>
+                    <span class="error"></span>
+                </div>
+            
+                    
+
+        <button id="botao"  onclick="respostadobotao()" type="submit">Enviar</button>
+        
+        
+        <p id="confirmação"></p>
+        <script>
+        function respostadobotao() {
+        //   document.getElementById("confirmação").innerHTML = "Reserva Feita !";
+            window.alert('Reserva Feita!')
+        }
+        </script>
+
+           
+
+    </form>
+    
+</body>
+
+<footer id="footer_info">
+	<h2>Contato</h2>
+	
+	<p>
+		<b>Telefone:</b> 3614-1247 <br>
+				  3602-1530
+	</p>
+	<p>
+	<address>
+		<b>Endereço:</b> Bloco I – Campus Sobral – Mucambinho <br>
+				Rua Coronel Estanislau Frota, 563 <br>
+				CEP 62.010-560 – Centro <br>
+				Sobral, Ceará <br> <br>  
+	
+	</p>
+	</address>
+	<p>Copyright &copy; Todos os direitos reservados</p>   
+	
+</footer>
+
+<script src='script/jquery.min.js'></script>
+<script src='script/owl.carousel.min.js'></script>
+<script src='script/script.js'></script>
+<script src="script/app.js"></script>
+
+
+</html>

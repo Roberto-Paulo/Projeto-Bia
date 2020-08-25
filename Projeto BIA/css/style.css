@@ -1,0 +1,218 @@
+/*Estilo do menu*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins' , sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #24303b;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+	color: #f07048;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-around;
+    width: 35%;
+}
+nav li{
+	list-style: none;
+	display: inline-block;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	letter-spacing: 3px;
+}
+nav a:hover{
+	color: #f07048;
+}
+
+.burger{
+	display: none;
+	cursor: pointer;
+}
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color:white;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+	nav ul{
+        width: 60%;
+	}
+	.computer{
+		opacity: 0;
+	}
+	.information{
+		opacity: 0;
+	}
+	.calendar{
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	} 
+	nav ul{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh; 
+		background-color: #24303b;
+		flex-direction: column;
+		text-align: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 15;
+	}
+	nav li{
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+	}
+	.owl-caption strong{
+		font-size: 20pt;
+	}
+	.owl-caption p{
+		font-size: 13pt;
+	}
+	.computer{
+		opacity: 0;
+	}
+	.information{
+		opacity: 0;
+	}
+	.calendar{
+		opacity: 0;
+	}
+	.ufclogo{
+		z-index: 5;
+		transform: translateX(-250px);
+		top: 80%;
+	}
+	.cards{
+		height: 90px;
+		padding: 10px;
+	}
+	section div p{
+		font-size: 10pt;
+		margin-left: -40px;
+		position: absolute;
+		margin-top: 5px;
+	}
+	section div img.img_card {
+    position: absolute;
+    margin-top: 2px;
+	height: 11%;
+    }
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@Keyframes navLinkFade{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.computer{
+	height: 45px;
+	position: absolute;
+	left: 103px;
+	top: 1px;
+}
+.information{
+	height: 35px;
+	position: absolute;
+	left: 135px;
+	top: 6px;
+}
+.calendar{
+	height: 35px;
+	left: 125px;
+	top: 7px;
+	position: absolute;
+}
+.ufclogo{
+	position: absolute;
+	height: 100px;
+	opacity: 0.8;
+	z-index: 5;
+	left: 70%;
+	top: 80%;
+}
+
+
+
+
+
+
+
+
+/*Formatação Rodapé*/
+footer{
+	font-family: 'Poppins', sans-serif;
+}
+footer#footer_info {
+    background-color: #24303b;
+    text-align: center;
+	clear: both;
+	border-top: 1px solid #24303b;
+}
+footer#footer_info p{
+	color: white;
+    margin: auto;
+    padding-bottom: 9px;
+    padding-top: 0px;
+}
+footer#footer_info h2 {
+	letter-spacing: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    color: #f07048;
+}
+footer#footer_info b {
+    color: #f07048;
+}
+footer#footer_info address{
+	color: white;
+}

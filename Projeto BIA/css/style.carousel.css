@@ -1,0 +1,91 @@
+/*Estilo do carrossel*/
+.owl-carousel{
+    float: left;
+}
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.owl-lazy{
+    height: 100%;
+    position: relative;
+}
+
+.owl-lazy{
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    background: #24303ba6;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    top: 50%;
+    padding: 20px 12px;
+    color: white;
+}
+.owl-prev:hover,
+.owl-next:hover{
+	background:#f07048;
+}
+
+.owl-prev{
+    border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+}
+.owl-next{
+    right: 0;
+    left: auto;
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+}
+.owl-dots{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    bottom: 15px;
+    text-align: center;
+	
+}
+
+.owl-dots .owl-dot{
+    background: white;
+    opacity: 0.5;
+    display: inline-block;
+    width: 35px;
+    height: 10px;
+    margin: 4px;
+	border-radius: 3px;
+}
+
+.owl-dots .owl-dot.active{
+    background: #24303ba6;
+    opacity: 0.7;
+}
+/*Estilo das legendas*/
+.owl-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    background:#24303ba6;
+    border-radius: 10px;
+    -webkit-transform: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.owl-caption h3{
+    font-size: 20pt;
+    color:#f07048;
+}
+.owl-caption p{
+    font-size: 16pt;
+}

@@ -1,0 +1,124 @@
+:root {
+    /*variáveis globais*/
+    --cor-principal: cornsilk;
+    --bg-color: cornsilk;
+    --text-color: #ffffff;
+    --light-color: rgba(245, 18, 18, 0.04);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+form {
+     background: #24303b;
+
+     width: 95%;
+     max-width: 500px;
+
+     margin: 32px auto;
+     padding: 32px;
+
+     display: flex;
+     flex-direction: column;
+
+     border-radius: 10px;
+
+     box-shadow:  rgba(0, 0, 0, 0.247) 5px 5px 10px;
+}
+
+form h2{
+    margin-bottom: 32px;
+    color: #f07048
+    
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+
+}
+ input,
+ button {
+     /* reset appearance*/
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     appearance: none;
+
+     /*box*/ 
+     width: 100%;
+     padding: 16px 0;
+
+     border:none;
+     border-bottom: 1px solid var(--cor-principal);
+
+     background-color: transparent;
+
+     outline: none;
+
+     /*text*/
+     color:var(--text-color);
+     font-size: 1em;
+
+ }
+
+ button {
+     margin-top: 16px;
+    
+     border-radius: 30px;
+     
+ }
+
+ input ~ label {
+     position: absolute;
+     top: 16px;
+     left: 0;
+
+     color: var(--text-color);
+
+     transition: .4s;
+ }
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    letter-spacing: 0.1em;
+
+}
+
+
+
+select {
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    padding: 0.6rem;
+    font-size: 16px;
+    color: var(--text-color);
+    background: #24303b;
+
+}
+
+button#botao{
+    background: #3a4c5e;
+    border-color: #3a4c5e;
+    
+   
+    
+}
+
+
+button#botao:hover{
+    color: #f07048;
+}
+
+label{
+    color: white;
+}
+
+
+
